@@ -22,6 +22,7 @@ def write_to_db(data):
     df.to_sql('covid_data', engine, if_exists='append', index=False)
     print('Data written to database')
 
+
 def main():
     url = 'https://covid-19.dataflowkit.com/v1/USA'
     get_initial_data = get_data(url)
